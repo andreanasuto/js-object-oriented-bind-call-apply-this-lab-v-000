@@ -1,5 +1,7 @@
 function justInvoke(fn) {
-  return this.fn
+  return fn() {
+    return this
+  }
 }
 
 function setThisWithCall(fn, thisValue, arg) {
