@@ -5,7 +5,15 @@ function justInvoke(fn) {
    return fn()
 }
 
-function setThisWithCall(thisValue, arg) {
-  debugger
-  this
+function setThisWithCall(fn, value, arg) {
+  return fn.call(value, arg)
 }
+
+function setThisWithApply(fn,value,args) {
+  return fn.apply(value,args)
+}
+
+function returnNewFunctionOf(functionToBeCopied, thisValue) {
+  return functionToBeCopied.bind(thisValue)
+}
+
