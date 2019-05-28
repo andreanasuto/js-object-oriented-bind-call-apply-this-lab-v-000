@@ -5,7 +5,7 @@ function justInvoke(fn) {
    return fn()
 }
 
-function setThisWithCall(thisValue, arg) {
+function setThisWithCall(hisValue, arg) {
   debugger
   return justInvoke.call(fn,thisValue, arg)
 }
