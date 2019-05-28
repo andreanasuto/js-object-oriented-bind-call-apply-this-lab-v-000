@@ -1,3 +1,3 @@
-function invokeFunction() {
-  return this
+function invokeFunction(fn) {
+  return fn
 }
