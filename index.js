@@ -1,5 +1,5 @@
 function justInvoke(fn) {
-  fucntion fn() {
+  function fn() {
     return this
   }
   return fn()
